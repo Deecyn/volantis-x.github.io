@@ -631,7 +631,7 @@ document.addEventListener("pjax:success", bindToggleButton);</script><script>fun
 }
 
 document.addEventListener("DOMContentLoaded", listennSidebarTOC);
-document.addEventListener("pjax:success", listennSidebarTOC);</script><!-- more --><script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script><script>var pjax;
+document.addEventListener("pjax:success", listennSidebarTOC);</script><!-- more --><script>"serviceWorker"in navigator&&navigator.serviceWorker.register("/sw.js").then(function(r){r.onupdatefound=function(){var e=r.installing;e.onstatechange=function(){switch(e.state){case"installed":navigator.serviceWorker.controller?console.log("Updated serviceWorker."):console.log("serviceWorker Sucess!");break;case"redundant":console.log("The installing service worker became redundant.")}}}}).catch(function(e){console.log("Error during service worker registration:",e)})</script><script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script><script>var pjax;
     document.addEventListener('DOMContentLoaded', function () {
       pjax = new Pjax({
         elements: 'a[href]:not([href^="#"]):not([href="javascript:void(0)"]):not([pjax-fancybox])',
